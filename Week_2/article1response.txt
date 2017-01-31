@@ -1,0 +1,4 @@
+Lauren Blake
+Article response #1
+
+Last semester I took a class called Visual Foundation Studio and a class called Innovation and Technology. Both of these classes taught me the importance of prototyping and creating many different versions before committing to a singular idea. I even got to do a couple of wireframes in those classes last semester for a website layout I created and for a mobile app layout. However, we never got to spend too much time talking about wireframes. This article reminded me of some of the material I learned last semester about creating low fidelity wireframes and remembering to consider the audience when creating wireframes. Although, I did not know that wireframes were also helpful in discovering errors with technical limitations and timeframes.
