@@ -1,0 +1,286 @@
+Access-Control-Allow-Origin:*
+
+}
+*  {text-decoration:none;}
+/* unvisited link */
+a:link {
+    color: grey;
+}
+
+/* visited link */
+a:visited {
+    color: grey;
+}
+*{
+      margin: 0;
+      padding: 0;
+    }
+body{
+	margin:0;
+	padding:0;
+	background-color:white;
+	color:black;
+	font-family: 'Nunito', sans-serif;
+
+}
+h1{
+	text-align: center;
+	float:center;
+	margin-left:95px;
+
+	/*font-family: 'Amatic SC', cursive;*/
+	/*font-family: 'Reenie Beanie', cursive;*/
+	/*font-family: 'Indie Flower', cursive;*/
+	
+	/*font-family: 'Covered By Your Grace', cursive;*/
+
+}
+h4{
+	/*font-family: 'Josefin Sans', sans-serif;*/
+}
+
+ul, li{
+	list-style-type: none;
+	text-decoration: none;
+}
+
+.bottomLinks a li{
+	padding-right:10px;
+}
+/*.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}*/
+.heading{
+	position:relative;
+	/*background-color: blue;*/
+	width:100%;
+	height:30px;
+	
+}
+
+
+.icon img{
+	/*display:absolute;*/
+	
+	width:30px;
+	height:30px;
+	padding:1px;
+	padding-top:2px;
+
+	
+}
+.title{
+	position:relative;
+	
+	
+
+}
+.title img{
+	position: relative;
+	width:350px;
+	margin-top:-75px;
+	
+	
+}
+
+.icon{
+	float:right;
+}
+
+
+/*.social-media,img{
+	display:inline;
+	width:30px;
+	height:30px;
+	padding:1px;
+	padding-top:2px;
+	
+}*/
+.Photo{
+	/*background-color: red;*/
+	width:100%;
+	margin:auto;
+	position:relative;
+	display:block;
+}
+
+/*.homepagePhotos{
+	background-color: red;
+	width:100%;
+	margin:auto;
+	position:relative;
+	display:block;
+}*/
+
+.Text{
+	/*background-color: red;*/
+	position:absolute;
+	text-align: center;
+	margin:auto;
+	margin-top:150px;
+	width:150px;
+	margin-left:45%;
+	font-family: 'Dosis', sans-serif;
+	font-size: 30px;
+	color:white;
+
+	/*background-color: blue;*/
+
+
+}
+
+
+.aboutme{
+	object-position: absolute;
+	text-align: center;
+	margin-left:47%;
+}
+
+.homepagePhotos img{
+
+	width:640px;
+	height:320px;
+	margin:auto;
+	opacity: 1;
+	padding:10px;
+}
+.homepagePhotos img:hover{
+	opacity: 0.5;
+	
+}
+.bottomLinks{
+
+	margin:auto;
+}
+.bottomLinks ul, li{
+	list-style-type:none;
+	text-decoration:none;
+	display:inline;
+	
+}
+
+/*GALLERY PAGE*/
+.gallery{
+	margin-left: 240px;
+	display:inline-block;
+	width:960px;
+	height:100%;
+}
+.pic{
+	position: relative;
+  	width: 300px;
+  	display: inline-block;
+  	margin:  5px;
+}
+.pic img{
+	width: 100%;
+  	height: auto;
+
+}
+.gallerytxt{
+	margin-top: 30px;
+	margin-left: 245px;
+	font-family: 'Nunito', sans-serif;
+	font-size: 25px;
+
+}
+/*ABOUT ME*/
+.fromCourt{
+	width:1000px;
+	margin:auto;
+	padding:40px;
+}
+.fromCourt p{
+	padding-bottom: 15px;
+}	
+.subheading{
+	margin-left: 218px;
+	padding-top:30px;
+	padding-bottom: 30px;
+	font-family: 'Nunito', sans-serif;
+	font-size: 25px;
+}
+
+/*CONTACT PAGE*/
+.headerPhoto {
+	width:1300px;
+	height:300px;
+	margin:auto;
+
+}
+.headerPhoto img{
+	width:1275px;
+	height:300px;
+	padding-top:20px;
+	
+}
+.subheader{
+	margin-left: 70px;
+	font-size: 25px;
+
+}
+.subheader p{
+	padding:10px;
+	font-family: 'Nunito', sans-serif;
+	
+}
+.contact-info{
+	padding-top:30px;
+	padding-bottom: 80px;
+}
+.contact-info p{
+	padding-top:10px;
+}
+hr{
+	margin-top: 40px
+	padding-bottom:15px;
+	background-color: red;
+}
+
+/*MUSIC PAGE*/
+/*.audio{
+	position:relative;
+	display:inline;
+	width:300px;
+	height:auto;
+	padding:200px;
+	padding-top: -30px;
+	}
+*/
+
+.audio iframe{
+	padding-right:100px;
+	padding-left: 100px;
+	padding-bottom:30px;
+}
+.video{
+	padding-bottom: 40px;
+}
+
+a{
+	text-decoration: none;
+}
+
+p{
+	font-color:white;}
+
+
+
+
+
+
