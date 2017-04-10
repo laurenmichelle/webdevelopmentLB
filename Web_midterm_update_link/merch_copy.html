@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Courtney Farren - Merch</title>
+	<link rel="stylesheet" type="text/css" href="../css/midterm_project.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<style type="text/css">
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding:0;
+    margin: 0;
+    width:50px;
+    height:50px;
+}
+a {text-decoration:none;}
+
+.dropdown img{
+	width:50px;
+	height:50px;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover img{
+	opacity:.5;
+}
+.dropdown:hover .dropdown-content:hover .dropdown-content-link:hover{
+	opacity:.5;
+}
+</style>
+
+	
+</head>
+<body>
+
+	<div class="heading">
+			<div class="icon">
+				<a href="https://www.facebook.com/courtneyfarrenmusic/"><img src="../img/facebook.jpg"></a></div>
+
+			<div class="icon">
+				<a href="https://twitter.com/CourtneyFarren"><img src="../img/twitter.png"></a></div>
+		
+			<div class="icon">
+				<a href="https://www.instagram.com/courtneyfarrenmusic/?hl=en"><img src="../img/insta.png"></a></div>
+
+			
+
+		
+				
+					<!-- <! <h1>Courtney Farren</h1>
+					<center>
+					<h4>singer/songwriter from the bay area</h4>
+				</center> -->
+				
+	
+			</div>
+
+			<div class="dropdown">
+  		<span><img src="../img/Hamburger_icon.svg.png"> </span>
+  		<div class="dropdown-content">
+  			<div class="dropdown-content-link"><p><a href="../midterm_project.html">home</a></p></div>
+    		<div class="dropdown-content-link"><p><a href="../music/music.html">music</a></p></div>
+     		<div class="dropdown-content-link"><p><a href="../aboutme/aboutme.html">about me</a></p></div>
+      		<div class="dropdown-content-link"><p><a href="../gallery/gallery.html">gallery</a></p></div>
+       		<div class="dropdown-content-link"><p><a href="../contact/contact.html">contact</a></p></div>
+	  	</div>
+	  	
+	  	</div>	
+
+	  	<center><div class="title"><img src="../img/Screen Shot 2017-03-19 at 7.00.15 PM.png"></div></center>
+
+	  	<hr>
+			<div class=checkout>
+				<p id="subtotal">Subtotal: </p>
+				<div id="item-Tshirt">
+				</div>
+				<div id="items-Hat">
+				</div>
+				<div id="items-Sweatshirt">
+				</div>
+				<div id="items-Pic">
+				</div>
+				<div id="items-Guitar">
+				</div>
+				<p id="estimatedTax">Estimated Tax: </p>
+				<p id="shipping">Shipping: </p>
+				<p id="grandTotal">Total: </p>
+				<button type="button" class="btn" onclick="popup()" id="purchase">Purchase</button>
+				<button type="button" class="btn" onclick="cancel()"" id="cancel">Cancel</button>
+
+			</div>
+
+	  	<div class="merchandise">
+	  		<img src="../img/placeHolder.png">
+	  		<p>T-Shirt</p>
+	  		<p>$30</p>
+	  		<button type="button" class="btn" id="buyTshirt" onclick="buy_Tshirt()" value="30">Buy Me</button>
+	  	</div>
+
+	  	<div class="merchandise">
+	  		<img src="../img/placeHolder.png">
+	  		<p>Hat</p>
+	  		<p>$20</p>
+	  		<button type="button" class="btn" id="buyHat" onclick="buy_Hat()" value="20">Buy Me</button>
+	  	</div>
+
+
+		<div class="merchandise">
+	  		<img src="../img/placeHolder.png">
+	  		<p>Sweatshirt</p>
+	  		<p>$45</p>
+	  		<button type="button" class="btn" id="buySweatshirt" onclick="buy_Sweatshirt()" value="45">Buy Me</button>
+	  	</div>
+
+		<div class="merchandise">
+	  		<img src="../img/placeHolder.png">
+	  		<p>Guitar Pic</p>
+	  		<p>$5</p>
+	  		<button type="button" class="btn" id="buyPic" onclick="buy_Pic()" value="5">Buy Me</button>
+	  	</div>
+
+		<div class="merchandise">
+	  		<img src="../img/placeHolder.png">
+	  		<p>Signed Guitar</p>
+	  		<p>$300</p>
+	  		<button type="button" class="btn" id="buyGuitar" onclick="buy_Guitar()" value="300">Buy Me</button>
+	  	</div>
+
+		
+
+
+	  
+
+	
+	
+
+	<hr>
+	<center><div class="bottomLinks">
+		
+			<ul>
+				<li><a href="../midterm_project.html">home</a></li>
+				<li>|</li>
+				<li><a href="../music/music.html">music</a></li>
+				<li>|</li>
+	            <li><a href="../aboutme/aboutme.html">about me</a></li>
+	            <li>|</li>
+				<li><a href="../gallery/gallery.html">gallery</a></li>
+				<li>|</li>
+				<li><a href="../merch/merch.html">merch</a></li>
+				<li>|</li>
+				<li><a href="../contact/contact.html">contact</a></li>
+
+
+			</ul>
+	
+	</div></center>
+
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded",function(){
+		//we only need to grab this button once, rather than storing it as a variable we can just grab it and add the event listener by chaining 2 methods/function
+
+			// document.getElementById('buyTshirt').addEventListener('click',buy);
+			// document.getElementById('buyHat').addEventListener('click',buy);
+			// document.getElementById('buySweatShirt').addEventListener('click',buy);
+			// document.getElementById('buyPic').addEventListener('click',buy);
+		});
+		var subtotal=0;
+		var total=0;
+		var tax=.08875;
+		var shipping=5;
+		function cancel(){
+			var s= document.getElementById("subtotal");
+				var t=document.getElementById("estimatedTax");
+				var round=Math.round(tax*subtotal);
+				var ship=document.getElementById("shipping");
+				var tot=document.getElementById("grandTotal");
+				t.innerHTML="Estimated Tax:";
+				ship.innerHTML="Shipping:";
+				tot.innerHTML="Total = ";
+				s.innerHTML="Subtotal: ";
+
+				itemTshirt=document.getElementById('item-Tshirt');
+				itemTshirt.innerHTML='';
+
+				itemsHat=document.getElementById('items-Hat');
+				itemsHat.innerHTML='';
+
+				itemsSweatshirt=document.getElementById('items-Sweatshirt');
+				itemsSweatshirt.innerHTML='';
+
+				itemsPic=document.getElementById('items-Pic');
+				itemsPic.innerHTML='';
+
+				itemsGuitar=document.getElementById('items-Guitar');
+				itemsGuitar.innerHTML='';
+
+
+		}
+		function popup(){
+			
+			if (confirm("Are you sure you want to make this purchase?")==true){
+				alert("Thank you for your purchase! Your items will arrive between 5-7 business days :)");
+
+			}
+			else{
+				var s= document.getElementById("subtotal");
+				var t=document.getElementById("estimatedTax");
+				var round=Math.round(tax*subtotal);
+				var ship=document.getElementById("shipping");
+				var tot=document.getElementById("grandTotal");
+				t.innerHTML="Estimated Tax:";
+				ship.innerHTML="Shipping:";
+				tot.innerHTML="Total = ";
+				s.innerHTML="Subtotal: ";
+
+				itemTshirt=document.getElementById('item-Tshirt');
+				itemTshirt.innerHTML='';
+
+				itemsHat=document.getElementById('items-Hat');
+				itemsHat.innerHTML='';
+
+				itemsSweatshirt=document.getElementById('items-Sweatshirt');
+				itemsSweatshirt.innerHTML='';
+
+				itemsPic=document.getElementById('items-Pic');
+				itemsPic.innerHTML='';
+
+				itemsGuitar=document.getElementById('items-Guitar');
+				itemsGuitar.innerHTML='';
+
+
+			}
+	
+		}
+		var itemType;
+		
+
+		function buy_Tshirt(){
+			itemType="Tshirt - $30";
+			subtotal+=30;
+			console.log(itemType);
+			//add();
+			itemTshirt=document.getElementById('item-Tshirt');
+			itemTshirt.innerHTML='';
+			var p1=document.createElement('P')
+			var t1=document.createTextNode(itemType);
+			p1.appendChild(t1);
+			console.log(p1);
+			itemTshirt.appendChild(p1);
+			
+			var s= document.getElementById("subtotal");
+			var t=document.getElementById("estimatedTax");
+			var round=Math.round(tax*subtotal);
+			t.innerHTML="Estimated Tax: $"+round;
+			var ship=document.getElementById("shipping");
+			var tot=document.getElementById("grandTotal");
+			ship.innerHTML="Shipping: $5";
+			total=subtotal+shipping+round;
+			tot.innerHTML="Total = $"+total;
+			s.innerHTML="Subtotal: $"+subtotal;
+
+			//items.appendChild(document.createElement('P').appendChild(document.createTextNode(itemType)));
+			
+		}
+		function buy_Hat(){
+			itemType="Hat - $20";
+			subtotal+=20;
+			console.log(itemType);
+			itemsHat=document.getElementById('items-Hat');
+			itemsHat.innerHTML='';
+			var p2=document.createElement('P')
+			var t2=document.createTextNode(itemType);
+			p2.appendChild(t2);
+			itemsHat.appendChild(p2);
+
+			var s= document.getElementById("subtotal");
+
+			s.innerHTML="Subtotal: $"+subtotal;
+			//add();
+			var s= document.getElementById("subtotal");
+			var t=document.getElementById("estimatedTax");
+			var round=Math.round(tax*subtotal);
+			t.innerHTML="Estimated Tax: $"+round;
+			var ship=document.getElementById("shipping");
+			var tot=document.getElementById("grandTotal");
+			ship.innerHTML="Shipping: $5";
+			total=subtotal+shipping+round;
+			tot.innerHTML="Total = $"+total;
+			s.innerHTML="Subtotal: $"+subtotal;
+
+		}
+		function buy_Sweatshirt(){
+			itemType="Sweatshirt - $45";
+			subtotal+=45;
+			console.log(itemType);
+			itemsSweatshirt=document.getElementById('items-Sweatshirt');
+			itemsSweatshirt.innerHTML='';
+			var p3=document.createElement('P')
+			var t3=document.createTextNode(itemType);
+			p3.appendChild(t3);
+			itemsSweatshirt.appendChild(p3);
+
+			var s= document.getElementById("subtotal");
+			s.innerHTML="Subtotal: $"+subtotal;
+			//add();
+
+			var s= document.getElementById("subtotal");
+			var t=document.getElementById("estimatedTax");
+			var round=Math.round(tax*subtotal);
+			t.innerHTML="Estimated Tax: $"+round;
+			var ship=document.getElementById("shipping");
+			var tot=document.getElementById("grandTotal");
+			ship.innerHTML="Shipping: $5";
+			total=subtotal+shipping+round;
+			tot.innerHTML="Total = $"+total;
+			s.innerHTML="Subtotal: $"+subtotal;
+		}
+		function buy_Pic(){
+			itemType="Guitar Pic - $5";
+			subtotal+=5
+			console.log(itemType);
+			itemsPic=document.getElementById('items-Pic');
+			itemsPic.innerHTML='';
+			var p4=document.createElement('P')
+			var t4=document.createTextNode(itemType);
+			p4.appendChild(t4);
+			itemsPic.appendChild(p4);
+
+			var s= document.getElementById("subtotal");
+			s.innerHTML="Subtotal: $"+subtotal;
+			//add();
+
+			var s= document.getElementById("subtotal");
+			var t=document.getElementById("estimatedTax");
+			var round=Math.round(tax*subtotal);
+			t.innerHTML="Estimated Tax: $"+round;
+			var ship=document.getElementById("shipping");
+			var tot=document.getElementById("grandTotal");
+			ship.innerHTML="Shipping: $5";
+			total=subtotal+shipping+round;
+			tot.innerHTML="Total = $"+total;
+			s.innerHTML="Subtotal: $"+subtotal;
+		}
+		function buy_Guitar(){
+			itemType="Signed Guitar - $300";
+		 	subtotal+=300;
+		 	console.log(itemType);
+		 	itemsGuitar=document.getElementById('items-Guitar');
+			itemsGuitar.innerHTML='';
+			var p5=document.createElement('P')
+			var t5=document.createTextNode(itemType);
+			p5.appendChild(t5);
+			itemsGuitar.appendChild(p5);
+			console.log(subtotal);
+
+			var s= document.getElementById("subtotal");
+			s.innerHTML="Subtotal: $"+subtotal;
+		 	//add();
+
+		 	var s= document.getElementById("subtotal");
+			var t=document.getElementById("estimatedTax");
+			var round=Math.round(tax*subtotal);
+			t.innerHTML="Estimated Tax: $"+round;
+			var ship=document.getElementById("shipping");
+			var tot=document.getElementById("grandTotal");
+			ship.innerHTML="Shipping: $5";
+			total=subtotal+shipping+round;
+			tot.innerHTML="Total = $"+total;
+			s.innerHTML="Subtotal: $"+subtotal;
+		}
+
+		// function add(){
+		// 	tax=subtotal*.08875;
+		//     total=tax+subtotal+shipping;
+		//     console.log(total);
+		//     console.log(tax);
+		//     console.log(subtotal);
+
+		//     var s= document.getElementById("subtotal");
+		// 	s.innerHTML="Subtotal: $"+subtotal;
+
+		// 	var s= document.getElementById("subtotal");
+		// 	var t=document.getElementById("estimatedTax");
+		// 	var round=Math.round(tax*subtotal);
+		// 	t.innerHTML="Estimated Tax: $"+round;
+		// 	var ship=document.getElementById("shipping");
+		// 	var tot=document.getElementById("grandTotal");
+		// 	ship.innerHTML="Shipping: $5";
+		// 	total=subtotal+shipping+round;
+		// 	tot.innerHTML="Total = $"+total;
+		// 	s.innerHTML="Subtotal: $"+subtotal;
+
+		// }
+
+		// function buy(){
+		// 	if (document.getElementById('buyTshirt').clicked==true){
+		// 		itemType="Tshirt - $30";
+		// 		subtotal+=30;
+		// 	}
+		// 	else if(document.getElementById('buyHat').clicked==true){
+		// 		itemType="Hat - $20";
+		// 		console.log(itemType);
+		// 		subtotal+=20;
+		// 	}
+		// 	else if(document.getElementById("buySweatshirt").onclick){
+		// 		itemType="Sweatshirt - $45";
+		// 		subtotal+=45;
+		// 	}
+		// 	else if(document.getElementById("buyPic").onclick){
+		// 		itemType="Guitar Pic - $5";
+		// 		subtotal+=5
+		// 	}
+		// 	else if (document.getElementById("buyGuitar").onclick){
+		// 		itemType="Signed Guitar - $300";
+		// 		console.log(itemType);
+		// 		subtotal+=300;
+		// 	}
+		// 	else{
+
+		// 	}
+		// 	tax=subtotal*.08875;
+		// 	total=tax+subtotal+shipping;
+
+			
+		 p1=document.createElement('P')
+		var item1=document.createTextNode(itemType);
+
+		// 	// console.log(itemType);
+		// }
+
+
+		// var =document.getElementById('buyHat').value;
+
+		
+
+	</script>
+</body>
+</html>
