@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Courtney Farren Music</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/final_project.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	
+<style>
+/*Small Devices*/
+@media only screen and ( min-width:776px) and (max-width: 923px) {
+    body {
+        /*background-color: black;*/
+    }
+
+    #social_media{
+    display:inline-block; 
+    height:100%;  
+    /*position:absolute;*/
+    
+    width:100%;
+    padding-left: 50%;
+    
+}
+    #social_media img{
+    	width:37px;
+
+
+    }
+
+    #logo{
+    	width:100%;
+    }
+} 
+
+@media only screen and (min-width:650px) and (max-width: 775px) {
+    body {
+        /*background-color: black;*/
+    }
+
+    #social_media{
+    width:100%;
+    display:inline-block; 
+    height:100%;  
+    padding-left: 50%;
+    /*position:absolute;*/
+    
+    
+}
+    #social_media img{
+    	width:30px;
+    }
+
+    #logo{
+    	width:100%;
+    }
+} 
+@media only screen and (max-width: 649px) {
+    body {
+        /*background-color: black;*/
+    }
+
+    #social_media{
+    width:100%;
+    display:inline-block; 
+    height:100%;  
+    padding-left: 45%;
+    /*position:absolute;*/
+    
+    
+}
+    #social_media img{
+    	width:27px;
+    }
+
+    #logo{
+    	width:100%;
+    }
+} 
+
+
+
+
+</style>
+</head>
+<body onload="repeat()">
+		<div class="row" id="navbar">
+		<!-- WORK ON MEDIA QUERIES -->
+	        <div class="col-xs-4 col-sm-4 col-m-4 col-lg-4">
+				<div class="dropdown">
+				  		<span><img src="img/Hamburger_icon.svg.png"> </span>
+				  		<div class="dropdown-content">
+				  			<div class="dropdown-content-link"><p><a href="final_project.html">home</a></p></div>
+				    		<div class="dropdown-content-link"><p><a href="music/music.html">music</a></p></div>
+				     		<div class="dropdown-content-link"><p><a href="about/about.html">about me</a></p></div>
+				      		<div class="dropdown-content-link"><p><a href="gallery/gallery.html">gallery</a></p></div>
+				       		<div class="dropdown-content-link"><p><a href="contact/contact.html">contact</a></p></div>
+						</div>
+	  	
+	  			</div>	
+	        </div>
+	        <div class="col-xs-4 col-sm-4 col-m-4 col-lg-4">
+	            <center><a href="Final_Project.html"> <img id="logo" src="img/static1.squarespace.png"></a></center>
+	        </div>
+	        <div class="col-xs-4 col-sm-4 col-m-4 col-lg-4">
+
+	        	<div id="social_media">
+	        	<a href="https://www.facebook.com/courtneyfarrenmusic/"><img id="icon" src="img/facebook.png"></a>
+
+	        	<a href="https://twitter.com/CourtneyFarren"><img id="icon" src="img/twitter.png"></a>
+	         
+	            <a href="https://www.instagram.com/courtneyfarrenmusic/?hl=en"><img id="icon" src="img/insta.png"></a>
+
+	            
+	            </div>
+	        </div>
+        </div>
+
+
+
+
+
+        <center><div class="homepagePhotos">
+<!-- MUSIC -->
+		<div id="animate" class="Container">
+				<div class="Text" style="padding-top: 3%"><h1>music</h1></div>
+
+			<a href="music/music.html"><img src="img/hey.png"></a>
+			
+
+		</div>		
+			
+<!-- ABOUT -->
+		<div class="Container" id="animate">
+			<div class="Text"> <h1>about</h1> </div>
+			<a href="about/about.html"><img src="img/ok.png"></a>
+		</div>
+<!-- GALLERY -->
+		<div class="Container" id="animate">
+			<div class="Text"><h1>gallery</h1> </div>
+			<a href="gallery/gallery.html"><img src="img/yup.png"></a>
+		</div>
+<!-- CONTACT -->
+		<div class="Container" id="animate" style="padding-bottom: 3%">
+			<div class="Text"> <h1>contact</h1></div>
+			<a href="contact/contact.html"><img src="img/lol.png"></a>
+		</div>
+
+		</div></center>
+
+	
+
+		<center><div class="bottomLinks">
+
+		
+			<ul>
+				<li><a href="midterm_project.html">home</a></li>
+				<li>|</li>
+				<li><a href="music/music.html">music</a></li>
+				<li>|</li>
+	            <li><a href="about/about.html">about</a></li>
+	            <li>|</li>
+				<li><a href="gallery/gallery.html">gallery</a></li>
+				<li>|</li>
+				<li><a href="contact/contact.html">contact</a></li>
+			</ul>
+	
+		</div></center>
+
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>  
+       
+<script>
+var change=0;
+var colors=["#FFDFDF","#EEEEFF","#FFFF99","#BDF4CB","#C0F7FE","#E0EAF8","#DBF0F7","white"];
+var currentColor;
+
+function repeat(){
+
+setInterval(function() {
+ 
+ if (change<colors.length){
+  change++;
+  console.log(currentColor);
+
+ }
+ else{
+  change=0;
+  console.log(change);
+ }
+ 
+  currentColor=colors[change];
+  document.body.style.background = currentColor;
+  // document.h1.style.color=currentColor;
+
+}, 5000);
+
+}
+var music=document.getElementById("music");
+var about=document.getElementById("about");
+var gallery=document.getElementById("gallery");
+var contact=document.getElementById("contact");
+
+// TweenMax.to(music, 5, {x:0, y:0, rotation:360, scale:1, ease:Elastic.easeOut});
+
+TweenMax.staggerTo('#animate', 5, {rotation: 360, delay:1, ease:Elastic.easeOut}, 0);
+// TweenMax.to(about, 5, {x:0, y:0, rotation:360, scale:1, ease:Elastic.easeOut});
+// TweenMax.to(gallery, 5, {x:0, y:0, rotation:360, scale:1, ease:Elastic.easeOut});
+// TweenMax.to(contact, 5, {x:0, y:0, rotation:360, scale:1, ease:Elastic.easeOut});
+
+</script>
+
+</body>
+</html>

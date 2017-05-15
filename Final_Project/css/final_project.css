@@ -1,0 +1,207 @@
+
+
+
+Access-Control-Allow-Origin:*{
+}
+
+*{
+    padding:0;
+    margin:0;
+
+}
+*  {text-decoration:none;}
+/* unvisited link */
+a {
+    color: grey;
+}
+a:hover {
+    text-decoration:none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+
+}
+a:link {
+    color: grey;
+}
+body{
+    margin:0;
+    padding:0;
+    background-color:white;
+    color:black;
+    font-family: 'Nunito', sans-serif;
+    background-color: random;
+
+}
+
+#navbar{
+    border-style:solid;
+    border-bottom-width: .5px; 
+    border-color:#808080;
+    border-top:hidden;
+}
+div {
+        /*background-color: rgba(0, 0, 255, 0.1);
+        border: 1px solid blue;*/
+    }
+#logo{
+    	width:75%;
+    	height:auto;
+    }
+
+#icon{
+	width:30px;
+	height:auto;
+
+    }
+
+#social_media{
+        
+    height:100%;  
+    /*position:absolute;*/
+    float:right;
+    margin-left: 66%;
+}
+
+
+.dropdown {
+
+   
+    display: inline-block;
+    padding:0;
+    margin: 0;
+    margin-top: 11%;
+    margin-right: 3%;
+
+   
+}
+
+a {text-decoration:none;}
+
+
+.dropdown img{
+    width:50px;
+    height:50px;
+
+}
+
+.dropdown-content {
+
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    padding: 0px 16px;
+    z-index: 1;
+    border-radius: 5px;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover img{
+    opacity:.5;
+}
+.dropdown-content-link:hover{
+    opacity:.5;
+}
+
+ul, li{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.bottomLinks a li{
+    padding-right:10px;
+}
+
+.Container{
+/*    background-color: pink;*/
+    width:100%;
+    position:relative;
+    display:block;
+}
+
+.Text{
+    /*background-color: red;*/
+    position:absolute;
+    text-align: center;
+    margin:auto;
+    margin-top:15%;
+    /*width:150px;*/
+    margin-left:47%;
+    font-family: 'Dosis', sans-serif;
+    font-size: 50px;
+    color:white;
+
+}
+
+
+
+.homepagePhotos img{
+/*    background-color: blue;*/
+    width:70%;
+    height:auto;
+    margin:auto;
+    opacity: 1;
+    padding:3%;
+}
+.homepagePhotos img:hover{
+    opacity: 0.5;
+    
+}
+.homepagePhotos h3:hover{
+    color:black;
+}
+.bottomLinks{
+    border-style: solid;
+    border-top-width: .25px; 
+    border-color:grey;
+    border-bottom:hidden;
+    border-left:hidden;
+    border-right:hidden;
+    margin:auto;
+    /*background-color: #bfbfbf*/
+}
+.bottomLinks ul, li{
+    list-style-type:none;
+    text-decoration:none;
+    display:inline;
+
+    
+}
+/*GALLERY*/
+#pic{
+    padding-bottom: 10%;
+
+}
+
+#gallery{
+    margin-top:3%;
+    margin-bottom: -5%;
+}
+/*ABOUT ME*/
+
+
+#personal{
+    height:275px;
+    overflow:scroll;
+}
+
+h3{
+    margin-bottom: 2%;
+}
+
+#audio{
+    margin-bottom: 3%;
+
+}
+
+
+

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>music</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/final_project.css">
+	<style type="text/css">
+	/*Small Devices*/
+@media only screen and ( min-width:776px) and (max-width: 923px) {
+    body {
+        /*background-color: black;*/
+    }
+
+    #social_media{
+    display:inline-block; 
+    height:100%;  
+    /*position:absolute;*/
+    
+    width:100%;
+    padding-left: 50%;
+    
+}
+    #social_media img{
+    	width:37px;
+
+
+    }
+
+    #logo{
+    	width:100%;
+    }
+} 
+
+@media only screen and (min-width:650px) and (max-width: 775px) {
+    body {
+        /*background-color: black;*/
+    }
+
+    #social_media{
+    width:100%;
+    display:inline-block; 
+    height:100%;  
+    padding-left: 50%;
+    /*position:absolute;*/
+    
+    
+}
+    #social_media img{
+    	width:30px;
+    }
+
+    #logo{
+    	width:100%;
+    }
+} 
+@media only screen and (max-width: 649px) {
+    body {
+        /*background-color: black;*/
+    }
+
+    #social_media{
+    width:100%;
+    display:inline-block; 
+    height:100%;  
+    padding-left: 45%;
+    /*position:absolute;*/
+    
+    
+}
+    #social_media img{
+    	width:27px;
+    }
+
+    #logo{
+    	width:100%;
+    }
+} 
+		/* Center the loader */
+#loader {
+  position: inline-block;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  margin:  0;
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #CECECE;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+#loader2{
+
+ position: inline-block;
+
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  margin:  0;
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #CECECE;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+#myDiv2{
+  display: none;
+  text-align: center;
+}
+
+
+
+	</style>
+</head>
+<body onload="myFunction()">
+
+	<div class="row" id="navbar">
+		<!-- WORK ON MEDIA QUERIES -->
+	        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<div class="dropdown">
+				  		<span><img src="../img/Hamburger_icon.svg.png"> </span>
+				  		<div class="dropdown-content">
+				  			<div class="dropdown-content-link"><p><a href="../final_project.html">home</a></p></div>
+				    		<div class="dropdown-content-link"><p><a href="../music/music.html">music</a></p></div>
+				     		<div class="dropdown-content-link"><p><a href="../about/about.html">about me</a></p></div>
+				      		<div class="dropdown-content-link"><p><a href="../gallery/gallery.html">gallery</a></p></div>
+				       		<div class="dropdown-content-link"><p><a href="../contact/contact.html">contact</a></p></div>
+						</div>
+	  	
+	  			</div>	
+	        </div>
+	        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+	            <center><a href="../Final_Project.html"> <img id="logo" src="../img/static1.squarespace.png"></a></center>
+	        </div>
+	        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
+	        	<div id="social_media">
+	        	<a href="https://www.facebook.com/courtneyfarrenmusic/"><img id="icon" src="../img/facebook.png"></a>
+
+	        	<a href="https://twitter.com/CourtneyFarren"><img id="icon" src="../img/twitter.png"></a>
+	         
+	            <a href="https://www.instagram.com/courtneyfarrenmusic/?hl=en"><img id="icon" src="../img/insta.png"></a>
+
+	            
+	            </div>
+	        </div>
+        </div>
+
+
+	<div class="container">
+		<h3>Demos</h3>
+		<center><div id="loader" style="padding:30px"></div></center>
+		<div id="myDiv" class="animate-bottom" style="display:none">
+		<center><div id="audio" class="col-md-6 col-lg-6">
+		<iframe width="360px" height="360" scrolling="no" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/232494004&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true"></iframe></div>
+
+		<div  class="col-md-6 col-lg-6">
+		<iframe margin-bottom="3%" width="360px" height="360" scrolling="no" frameborder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/309428344&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=false&amp;show_reposts=false&amp;visual=true"></iframe></div></center>
+	</div>
+	</div>
+
+	<hr>
+
+	<div class="container" >
+		<h3>Music Videos</h3>
+		<center><div id="loader2" style="padding:30px"></div></center>
+		<div id="myDiv2" class="animate-bottom" style="display:none">
+			<center>
+			<div class="col-12">
+			<iframe width="640" height="360" src="https://www.youtube.com/embed/xsjyuFI2Bjs?rel=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+			</center>
+	</div>
+
+
+	</div>
+
+
+	<center><div class="bottomLinks" style="margin-top:5%">
+
+		
+			<ul>
+				<li><a href="../midterm_project.html">home</a></li>
+				<li>|</li>
+				<li><a href="../music/music.html">music</a></li>
+				<li>|</li>
+	            <li><a href="../about/about.html">about</a></li>
+	            <li>|</li>
+				<li><a href="../gallery/gallery.html">gallery</a></li>
+				<li>|</li>
+				<li><a href="../contact/contact.html">contact</a></li>
+			</ul>
+	
+		</div></center>
+	<script>
+
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 1000);
+    repeat();
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+  document.getElementById("loader2").style.display = "none";
+  document.getElementById("myDiv2").style.display = "block";
+}
+
+
+var change=0;
+var colors=["#FFDFDF","#EEEEFF","#FFFF99","#BDF4CB","#C0F7FE","#E0EAF8","#DBF0F7","white"];
+var currentColor;
+
+function repeat(){
+
+setInterval(function() {
+ 
+ if (change<colors.length){
+  change++;
+  console.log(currentColor);
+
+ }
+ else{
+  change=0;
+  console.log(change);
+ }
+ 
+  currentColor=colors[change];
+  document.body.style.background = currentColor;
+  // document.h1.style.color=currentColor;
+
+}, 5000);
+
+
+
+}
+</script>
+
+
+
+
+</body>
+</html>
